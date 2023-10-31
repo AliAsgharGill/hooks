@@ -1,10 +1,10 @@
 import * as React from "react";
-import { createRoot } from "react-dom/client";
+// import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
+  // Route,
+  // Link,
 } from "react-router-dom";
 
 import "./App.css";
@@ -13,6 +13,9 @@ import HookTwo from "./hooks/useEffect/Index";
 import HookContext from "./hooks/useContext/Index";
 import Memo from "./hooks/useMemo/Index";
 import Callback from "./hooks/useCallback/Index";
+import Ref from "./hooks/useRef/Index";
+import LayoutEffect from "./hooks/useLayoutEffect/Index";
+import Reducer from "./hooks/useReducer/Index";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +44,18 @@ const router = createBrowserRouter([
   {
     path: "useCallback",
     element: <Callback />,
+  },
+  {
+    path: "useRef",
+    element: <Ref />,
+  },
+  {
+    path: "useLayoutEffect",
+    element: <LayoutEffect />,
+  },
+  {
+    path: "useReducer",
+    element: <Reducer />,
   },
 ]);
 
