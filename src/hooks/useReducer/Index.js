@@ -10,7 +10,6 @@ const reducer = (state, action) => {
   } else if (action.type === "Decrement") {
     return state - 1;
   }
-
   return state;
 };
 

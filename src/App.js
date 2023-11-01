@@ -16,6 +16,9 @@ import Callback from "./hooks/useCallback/Index";
 import Ref from "./hooks/useRef/Index";
 import LayoutEffect from "./hooks/useLayoutEffect/Index";
 import Reducer from "./hooks/useReducer/Index";
+import Transition from "./hooks/useTransition/Index";
+import UseId from "./hooks/useId/Index";
+import DeferredValue from "./hooks/useDeferredValue/Index";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -56,6 +59,18 @@ const router = createBrowserRouter([
   {
     path: "useReducer",
     element: <Reducer />,
+  },
+  {
+    path: "useTransition",
+    element: <Transition />,
+  },
+  {
+    path: "useId",
+    element: <UseId />,
+  },
+  {
+    path: "useDeferredValue",
+    element: <DeferredValue />,
   },
 ]);
 

@@ -1,6 +1,7 @@
 import React from "react";
 
 const Input = ({
+  id,
   type,
   name,
   value,
@@ -13,6 +14,7 @@ const Input = ({
     <>
       <input
         type={type}
+        id={id}
         name={name}
         value={value}
         className={className}
